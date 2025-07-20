@@ -1,18 +1,16 @@
-import os
 import subprocess
 import webbrowser
 
 
-new = 2 # open in a new tab, if possible
-
-# open a public URL, in this case, the webbrowser docs
-url = "http://docs.python.org/library/webbrowser.html"
-webbrowser.get(using='google-chrome').open(url,new=new)
+url = 'https://www.notion.so/20a8ae1342ae80ddac46e847306ff5b2?v=20a8ae1342ae809c9d57000c16b06dad'
+url2 = 'https://github.com/compress4j/compress4j'
+webbrowser.get(using='google-chrome')
+webbrowser.open_new(url=url)
+webbrowser.open(url=url2)
 
 command = ["/home/renas/.local/share/JetBrains/Toolbox/scripts/idea1", "/home/renas/workspace/compress4j"]
 
-os.run(command, check=True)
+subprocess.run(command, check=True)
 
-url = 'http://docs.python.org/'
 
 
